@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <title>Bài tập 4</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS v5.3.8 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Bài 1 -->
+    <div class="row d-flex justify-content-center mb-5">
+        <div class="col-6">
+            <div class="card shadow">
+                <div class="card-header bg-info text-light">
+                    <h4 class="mb-0">Quản lý tuyển sinh</h4>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Nhập điểm chuẩn </label>
+                        <input type="number" class="form-control" id="diemchuan" aria-describedby="helpId"
+                            placeholder="Nhập điểm chuẩn " />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Chọn khu vực</label>
+                        <select class="form-select" id="city">
+                            <option value="">-- Chọn khu vực --</option>
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Chọn đối tượng</label>
+                        <select class="form-select" id="doituong">
+                            <option value="">-- Chọn đối tượng --</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Điểm môn thứ nhất</label>
+                        <input type="number" class="form-control" id="mon1" aria-describedby="helpId"
+                            placeholder="Nhập điểm môn thứ nhất" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Điểm môn thứ hai</label>
+                        <input type="number" class="form-control" id="mon2" aria-describedby="helpId"
+                            placeholder="Nhập môn thứ hai" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Điểm môn thứ ba</label>
+                        <input type="number" class="form-control" id="mon3" aria-describedby="helpId"
+                            placeholder="Nhập môn thứ ba" />
+                    </div>
+                    <button id="check" class="btn btn-info">Kết quả</button>
+                    <!--  kết quả -->
+                    <div id="result" class=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bài 2 -->
+    <div class="row d-flex justify-content-center mb-5">
+        <div class="col-6">
+            <div class="card shadow">
+                <div class="card-header bg-success text-light">
+                    <h4 class="mb-0">Tính tiền điện</h4>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Nhập họ tên</label>
+                        <input type="text" class="form-control" id="hoten" aria-describedby="helpId"
+                            placeholder="Nhập họ tên" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Nhập số kw</label>
+                        <input type="number" class="form-control" id="sokw" aria-describedby="helpId"
+                            placeholder="Nhập số kw" />
+                    </div>
+                    <button id="check2" class="btn btn-primary">Tính tiền điện</button>
+                    <!--  kết quả -->
+                    <div id="result2" class=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bài 3 -->
+    <div class="row d-flex justify-content-center mb-5">
+        <div class="col-6">
+            <div class="card shadow">
+                <div class="card-header bg-success text-light">
+                    <h4 class="mb-0">Tính thuế thu nhập cá nhân</h4>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Nhập họ tên</label>
+                        <input type="text" class="form-control" id="hoten3" aria-describedby="helpId"
+                            placeholder="Nhập họ tên" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Tổng thu nhập năm</label>
+                        <input type="number" class="form-control" id="thunhap" aria-describedby="helpId"
+                            placeholder="Tổng thu nhập năm" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Số người phụ thuộc</label>
+                        <input type="number" class="form-control" id="songuoi" aria-describedby="helpId"
+                            placeholder="Số người phụ thuộc" />
+                    </div>
+                    <button id="check3" class="btn btn-primary">Tính tiền thuế</button>
+                    <!--  kết quả -->
+                    <div id="result3" class=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bài 4 -->
+<div class="row d-flex justify-content-center mb-5">
+    <div class="col-6">
+        <div class="card shadow">
+            <div class="card-header bg-warning text-dark">
+                <h4 class="mb-0">Tính tiền cáp</h4>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <label class="form-label">Chọn loại khách hàng</label>
+                    <select class="form-select" id="customerType">
+                        <option value="">-- Chọn loại khách hàng --</option>
+                        <option value="residential">Nhà dân</option>
+                        <option value="business">Doanh nghiệp</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Nhập mã khách hàng</label>
+                    <input type="text" class="form-control" id="customerId" placeholder="Nhập mã khách hàng" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Số kênh cao cấp</label>
+                    <input type="number" class="form-control" id="channels" placeholder="Nhập số kênh cao cấp" />
+                </div>
+               
+                <div class="mb-3" id="connectionDiv" style="display: none;">
+                    <label class="form-label">Số kết nối (Dành cho doanh nghiệp)</label>
+                    <input type="number" class="form-control" id="connections" placeholder="Nhập số kết nối" />
+                </div>
+                <button id="calcCableBtn" class="btn btn-warning">Tính tiền cáp</button>
+                <!--  Kết quả -->
+                <div id="result4"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
